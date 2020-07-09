@@ -1,0 +1,20 @@
+ALGORITHM sort
+VAR
+    i,j,v : INTEGER;
+    arr : ARRAY OF INTEGER;
+BEGIN
+    
+FOR i FROM 2 TO arr.length  DO
+ 
+     v := arr[ i ];
+     j := i ;
+    WHILE (arr[ j-1 ] > v DO
+            arr[ j ] := arr[ j-1 ] ;
+            j := j - 1 ;
+    END_WHILE 
+    arr[ j ] := v ;
+END_FOR
+
+
+
+END
